@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-#include <cstdlib> // untuk system("CLS")
+#include <cstdlib> 
 using namespace std;
 
 const int JUMLAH_MENU = 2;
@@ -26,7 +26,7 @@ int menuDanPesan() {
 
         int pilihan;
         try {
-            pilihan = stoi(input); // ubah string ke int
+            pilihan = stoi(input); 
         } catch (...) {
             cout << "Input tidak valid!\n";
             continue;
@@ -61,7 +61,7 @@ void tampilkanStruk(int total, double diskon, double totalAkhir) {
     cin.ignore();
     cin.get();
 
-    system("CLS"); // untuk Windows. Ganti "clear" kalau kamu pakai Linux/Mac.
+    system("CLS"); 
 
     cout << "======= STRUK PEMBAYARAN =======\n";
     for (int i = 0; i < JUMLAH_MENU; i++) {
